@@ -1,7 +1,8 @@
 package com.lhbasura.spring.learn.service;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component("c")
 public class UserService {
 	private String name;
 	private int age;
@@ -10,6 +11,8 @@ public class UserService {
 		this.name = name;
 		this.age = age;
 	}
+	public UserService(){}
+
 
 	@Override
 	public String toString() {
